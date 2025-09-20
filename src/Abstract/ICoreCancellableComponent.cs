@@ -1,0 +1,29 @@
+﻿using System.Threading;
+using System.Threading.Tasks;
+using Soenneker.Quark.Components.Core.Abstract;
+
+namespace Soenneker.Quark.Components.Core.Cancellable.Abstract;
+
+/// <summary>
+/// Contract for components that expose a cancellable, resettable async work scope.
+/// </summary>
+public interface ICoreCancellableComponent : ICoreComponent
+{
+    /// <summary>
+    /// Gets the current token for in-flight work.
+    /// </summary>
+    /// <remarks>
+    /// Should return <see cref="CancellationToken.None"/> after disposal.
+    /// </remarks>
+    CancellationToken CancellationToken { get; }
+
+    /// <summary>
+    /// Cancels any in-flight work. No-op if nothing has started.
+    /// </summary>
+    Task Cancel();
+
+    /// <summary>
+    /// Cancels current work and swaps in a fresh token/source for new work.
+    /// </summary>
+    ValueTask ResetCancellation();
+}
