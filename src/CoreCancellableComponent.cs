@@ -1,9 +1,8 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Soenneker.Quark.Components.Core.Cancellable.Abstract;
 using Soenneker.Utils.AtomicResources;
 
-namespace Soenneker.Quark.Components.Core.Cancellable;
+namespace Soenneker.Quark;
 
 ///<inheritdoc cref="ICoreCancellableComponent"/>
 public abstract class CoreCancellableComponent : CoreComponent, ICoreCancellableComponent

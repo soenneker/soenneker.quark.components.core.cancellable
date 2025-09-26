@@ -1,5 +1,3 @@
-﻿using Soenneker.Quark.Components.Core.Abstract;
-
-namespace Soenneker.Quark.Components.Core.Cancellable.Abstract;
+﻿namespace Soenneker.Quark;
 
 public interface ICoreCancellableElement : ICoreCancellableComponent, ICoreElement;

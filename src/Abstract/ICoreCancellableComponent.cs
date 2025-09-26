@@ -1,8 +1,7 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
-using Soenneker.Quark.Components.Core.Abstract;
 
-namespace Soenneker.Quark.Components.Core.Cancellable.Abstract;
+namespace Soenneker.Quark;
 
 /// <summary>
 /// Contract for components that expose a cancellable, resettable async work scope.
