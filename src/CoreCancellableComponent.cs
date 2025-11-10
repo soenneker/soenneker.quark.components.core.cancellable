@@ -49,13 +49,17 @@ public abstract class CoreCancellableComponent : CoreComponent, ICoreCancellable
 
     public ValueTask ResetCancellation() => _cancellationTokenSource.Reset();
 
-    public virtual async ValueTask DisposeAsync()
+    public override async ValueTask DisposeAsync()
     {
         await _cancellationTokenSource.DisposeAsync();
+
+        await base.DisposeAsync();
     }
 
-    public virtual void Dispose()
+    public override void Dispose()
     {
         _cancellationTokenSource.Dispose();
+
+        base.Dispose();
     }
 }
