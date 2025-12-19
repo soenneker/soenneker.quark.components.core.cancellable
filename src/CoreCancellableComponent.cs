@@ -1,6 +1,6 @@
 using System.Threading;
 using System.Threading.Tasks;
-using Soenneker.Utils.AtomicResources;
+using Soenneker.Atomics.Resources;
 
 namespace Soenneker.Quark;
 
@@ -8,10 +8,10 @@ namespace Soenneker.Quark;
 public abstract class CoreCancellableComponent : CoreComponent, ICoreCancellableComponent
 {
     public CancellationToken CancellationToken =>
-        Disposed.IsTrue || AsyncDisposed.IsTrue
+        Disposed.Value || AsyncDisposed.Value
             ? CancellationToken.None
             : _cancellationTokenSource.TryGet()
-                ?.Token ?? CancellationToken.None;
+                                      ?.Token ?? CancellationToken.None;
 
     private readonly AtomicResource<CancellationTokenSource> _cancellationTokenSource;
 
