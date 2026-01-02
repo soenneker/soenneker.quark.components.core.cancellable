@@ -18,7 +18,7 @@
         <AssemblyName>Soenneker.Quark.Components.Core.Cancellable</AssemblyName>
         <PackageId>Soenneker.Quark.Components.Core.Cancellable</PackageId>
         <PackageTags>quark components core cancellable blazor html element component cancellationtoken cancellation corecancellablecomponent blazorlibrary csharp dotnet c# .net</PackageTags>
-        <Copyright>Copyright © 2025 Jake Soenneker</Copyright>
+        <Copyright>Copyright © 2025-2026 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
