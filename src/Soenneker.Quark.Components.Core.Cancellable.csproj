@@ -47,7 +47,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Atomics.Resources" Version="4.0.8" />
-        <PackageReference Include="Soenneker.Quark.Components.Core" Version="4.0.28" />
+        <PackageReference Include="Soenneker.Quark.Components.Core" Version="4.0.29" />
         
     </ItemGroup>
 </Project>
