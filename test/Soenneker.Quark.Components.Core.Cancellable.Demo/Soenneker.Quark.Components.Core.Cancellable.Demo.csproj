@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+<?xml version="1.0" encoding="utf-8"?><Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
       <TargetFramework>net10.0</TargetFramework>
@@ -15,6 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Soenneker.Quark.Components.Core.Cancellable.csproj" />
+    <ProjectReference Include="..\..\src\Soenneker.Quark.Components.Core.Cancellable\Soenneker.Quark.Components.Core.Cancellable.csproj" />
   </ItemGroup>
 </Project>
