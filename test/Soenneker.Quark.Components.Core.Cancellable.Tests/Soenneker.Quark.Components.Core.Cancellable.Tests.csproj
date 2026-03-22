@@ -28,7 +28,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\Soenneker.Quark.Components.Core.Cancellable.csproj" />
+        <ProjectReference Include="..\..\src\Soenneker.Quark.Components.Core.Cancellable\Soenneker.Quark.Components.Core.Cancellable.csproj" />
     </ItemGroup>
 
     <ItemGroup>
